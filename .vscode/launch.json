@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "name": "Kubernetes: Run/Debug - cloudbuild",
+            "type": "cloudcode.kubernetes",
+            "request": "launch",
+            "skaffoldConfig": "${workspaceFolder}/cloud-code/skaffold.yaml",
+            "profile": "cloudbuild",
+            "watch": true,
+            "cleanUp": false,
+            "portForward": true,
+            "imageRegistry": "gcr.io/neivtron"
+        }
+    ]
+}
