@@ -22,7 +22,7 @@ app.post('/', async (req, res) => {
     await deleteFile(file.bucket, file.name);
   }
   catch (ex) {
-    console.log(`Error: ${ex}`);
+    console.log(`Error ::: ${ex}`);
   }
   res.set('Content-Type', 'text/plain');
   res.send('\n\n\nOK\n\n\n');
